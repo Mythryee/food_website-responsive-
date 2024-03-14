@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Your Meal</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <nav id="navbar">
+      <div>
+        <img id="img-logo" src="logo.png" alt="Meal" />
+      </div>
+      <ul class="navul">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Contact us</a></li>
+        <li><a href="#">Help</a></li>
+        <li><button id="login">Log in</button></li>
+      </ul>
+      <div class="nav-toggle">
+        <img id="home" src="home.png" alt=">" />
+        <span></span>
+      </div>
+    </nav>
+    <div id="primary-section">
+      <h1>Order your meal</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, officiis
+        adipisci? Asperiores, fugit eligendi repudiandae assumenda rem maxime at
+        tempora provident animi corporis vel a ipsum impedit! Reprehenderit
+        culpa dignissimos sunt rerum, tempora non assumenda cum qui consequuntur
+        unde ex laudantium expedita quasi quidem eius suscipit perspiciatis
+        fugiat minima inventore. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Rerum, dolorum nihil sequi recusandae, voluptatum
+        doloremque accusantium modi autem eveniet voluptates, in perspiciatis
+        quisquam facere exercitationem illo impedit? Incidunt quod dignissimos
+        odit? Deleniti non, accusantium sed, magni eaque voluptatem facilis
+        iusto vero optio rerum tempora similique saepe, reiciendis aliquid.
+        Minima, at.
+      </p>
+      <button id="order">Order Your Meal</button>
+    </div>
+    <div id="service-section">
+        <h1>Our Services</h1>
+        <div class="container">
+            <div class="blog">
+                <img src="thali.jpg" alt="">
+                <div>
+                  <h2>Cattering</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quisquam at laudantium nesciunt ullam dicta ut mollitia atque iusto assumenda facere dignissimos harum, quas, cumque doloribus, saepe eius? </p>
+                </div>
+            </div>
+            <div class="blog">
+                <img src="biryani.jpg" alt="">
+                <div>
+                  <h2>Food Delivery</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quisquam at laudantium nesciunt ullam dicta ut mollitia atque iusto assumenda facere dignissimos harum, quas, cumque doloribus, saepe eius? </p>
+                </div>
+            </div>
+            <div class="blog">
+                <img src="sweets.jpg" alt="">
+                <div>
+                  <h2>Sweets</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quisquam at laudantium nesciunt ullam dicta ut mollitia atque iusto assumenda facere dignissimos harum, quas, cumque doloribus, saepe eius? </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact-form">
+      <h1>Register Now</h1>
+
+      <input type="text" name="name" id="name" placeholder="Enter your name" />
+
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Enter your email"
+      />
+
+      <input
+        type="password"
+        name="pass"
+        id="pass"
+        placeholder="Enter your password"
+      />
+
+      <input
+        type="password"
+        name="pass"
+        id="cpass"
+        placeholder="Confirm password"
+      />
+
+      <input type="submit" value="Register" />
+    </div>
+    <footer id="foot">
+      <div class="foot">All &#169 copyrights are reserved</div>
+    </footer>
+
+
+
+    <script>
+      let a = document.querySelector('.navul')
+      document.getElementById('home').addEventListener('click',()=>{
+          if(a.style.display == 'none'){
+            a.style.display = 'block'
+            document.querySelector('span').append(a)
+          }else{
+            a.style.display = 'none'
+          }
+      })
+    </script>
+  </body>
+</html>
